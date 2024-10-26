@@ -25,8 +25,8 @@ if pf=="Windows":
     env = Environment(CPPPATH = ["E:\\Projects\\Applications\\Slyvina\\Libs\\Units\\Headers"])
 elif pf=="Linux":
     #print("Linux setup comes later!")
-    SlyvDir="/home/nostramantu/Slyvina/Libs/Units/Source"
-    env = Environment(CPPPATH = ["/home/nostramantu/Slyvina/Libs/Units/Headers"])
+    SlyvDir="/home/nostramantu/Code/Slyvina/Libs/Units/Source"
+    env = Environment(CPPPATH = ["/home/nostramantu/Code/Slyvina/Libs/Units/Headers"])
     #skip=True
 else:
     print("I don't know this platform")
