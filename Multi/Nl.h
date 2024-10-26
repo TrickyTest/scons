@@ -1,2 +1,1 @@
-// Hoi!
-static char* Nl = "Hallo wereld!";
+static const char* Nl = "Hallo wereld!";
