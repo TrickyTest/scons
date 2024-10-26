@@ -1,2 +1,4 @@
-Program("Hello.cpp")
+Program("Hello1","Hello.cpp")
+Program("Hello2","Hello2.c")
+
 
