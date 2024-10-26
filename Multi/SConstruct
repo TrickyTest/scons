@@ -1,3 +1,5 @@
+import platform
+
 print("C")
 Program("mc.c")
 
@@ -5,3 +7,33 @@ print("C++")
 cpp = ["mcpp.cpp","mcppi.cpp"]
 Program("mcpp",cpp)
 
+# QCol version
+def mSD(l):
+    ret = []
+    for e in l: 
+        if platform.system()=="Windows":
+            ret.append("%s\\%s"%(SlyvDir,e))
+        else:
+            ret.append("%s/%s"%(SlyvDir,e))
+    return ret;
+    
+pf = platform.system()
+print("QCol version - Platform: %s"%pf)
+skip=False
+if pf=="Windows":
+    SlyvDir="E:\\Projects\\Applications\\Slyvina\\Libs\\Units\\Source"
+    env = Environment(CPPPATH = ["E:\\Projects\\Applications\\Slyvina\\Libs\\Units\\Headers"])
+elif pf=="Linux":
+    print("Linux setup comes later!")
+    skip=True
+else:
+    print("I don't know this platform")
+    skip=True    
+if skip:
+    print("Skipping QCol")
+else:
+    sources = ["mqc.cpp"] + mSD(["SlyvQCol.cpp","SlyvString.cpp"])
+    for f in sources: print("Source: %s"%f)    
+    env.Program("mqc",sources)
+    
+    
