@@ -27,7 +27,7 @@ elif pf=="Linux":
     #print("Linux setup comes later!")
     SlyvDir="~/Slyvina/Libs/Units/Source"
     env = Environment(CPPPATH = ["~/Slyvina/Libs/Units/Headers"])
-    skip=True
+    #skip=True
 else:
     print("I don't know this platform")
     skip=True    
