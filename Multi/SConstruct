@@ -1,0 +1,7 @@
+print("C")
+Program("mc.c")
+
+print("C++")
+cpp = ["mcpp.cpp","mcppi.cpp"]
+Program("mcpp",cpp)
+
