@@ -34,7 +34,7 @@ else:
 if skip:
     print("Skipping QCol")
 else:
-    sources = ["mqc.cpp"] + mSD(["SlyvQCol.cpp","SlyvString.cpp"])
+    sources = ["mqc.cpp","mcppi.cpp"] + mSD(["SlyvQCol.cpp","SlyvString.cpp"])
     for f in sources: print("Source: %s"%f)    
     env.Program("mqc",sources)
     
