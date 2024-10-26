@@ -1,1 +1,1 @@
-static char* Fr = "Salut monde!";
+static const char* Fr = "Salut monde!";

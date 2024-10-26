@@ -1,1 +1,1 @@
-static char* En = "Hello World!";
+static const char* En = "Hello World!";
